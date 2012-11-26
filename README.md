@@ -2,7 +2,11 @@
 
 This is a port of Peter Keller's sample boids program to python3.
 
-For the original Common Lisp version of boids, check out: (TBD).
+For the original Common Lisp version of boids, check out:
+[Boids Flocking Model](http://pages.cs.wisc.edu/~psilord/lisp-public/boids.html)
+
+_NOTE:_ This port was taken from an earlier, unpublished snapshot
+of the Common Lisp version and is now somewhat out of date.
 
 ## Background (from Peter Keller)
 

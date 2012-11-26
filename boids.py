@@ -248,7 +248,7 @@ class flock(object):
             gl.glVertex(boid.location.x, boid.location.y, boid.location.z)
             if boid.velocity.length() > 0:
                 ## head = boid.location + boid.velocity.normalize()
-                head = boid.location + boid.velocity.normalize() * 4
+                head = boid.location + boid.velocity.normalize() * 3
             else:
                 head = boid.location
             gl.glVertex(head.x, head.y, head.z)
@@ -290,7 +290,7 @@ def main():
     gl.glLoadIdentity()
     # glu.gluLookAt(0.0, 0.0, 150, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0)
     glu.gluLookAt(0.0, 0.0, 3 * edge, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0)
-    gl.glPointSize(2.0)
+    gl.glPointSize(3.0)
     cube0 = Vector3(- edge, - edge, - edge)  # cube min vertex
     cube1 = Vector3(+ edge, + edge, + edge)  # cube max vertex
     theflock = flock(200, cube0, cube1)
